@@ -2,7 +2,7 @@
 $akun[] = [
 "id" => "1639541441492",
 "nama" => "Noval",
-"email" => "novalaja@gmail.com",
+"email" => "noval@gmail.com",
 "password" => "123",
 "role" => "admin",
 ];
