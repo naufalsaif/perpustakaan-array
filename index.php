@@ -136,6 +136,9 @@ date_default_timezone_set('Asia/Jakarta');
         $page = $_GET['page'];
 
         switch ($page) {
+            case 'login':
+                include "halaman/login.php";
+                break;
             case 'registrasi':
                 include "halaman/registrasi.php";
                 break;

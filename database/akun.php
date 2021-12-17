@@ -1,7 +1,7 @@
 <?php
 $akun[] = [
 "id" => "1639541441492",
-"nama" => "Noval",
+"nama" => "Muhammad Naufal",
 "email" => "noval@gmail.com",
 "password" => "123",
 "role" => "admin",
