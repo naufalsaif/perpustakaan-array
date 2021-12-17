@@ -1,5 +1,9 @@
 <?php
 $buku = [];
+$keyword2 = "";
+if (isset($_POST['search'])) {
+    $keyword2 = $_POST['keyword'];
+}
 ?>
 
 <div class="container pt-3">
@@ -7,7 +11,7 @@ $buku = [];
         <form action="" method="post">
             <div class="col-lg-6 col-md-8">
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Masukkan kata kunci" name="keyword">
+                    <input type="text" class="form-control" placeholder="Masukkan kata kunci" name="keyword" value="<?= $keyword2; ?>">
                     <button type="submit" class="btn btn-outline-primary" type="button" id="button-addon2" name="search">Search</button>
                 </div>
             </div>
@@ -15,8 +19,12 @@ $buku = [];
     </div>
 </div>
 <div class="container pb-3">
-    <?php if ($_SESSION['role'] == 'admin') : ?>
-        <a href="<?= url_tujuan("tambah_buku"); ?>" class="btn btn-primary tambah-buku">Tambah Buku</a>
+    <?php if (isset($_POST['search'])) : ?>
+        <a href="<?= url_tujuan("home"); ?>" class="btn btn-primary tambah-buku"><i class="fas fa-fw fa-sync-alt"></i> Refresh</a>
+    <?php else : ?>
+        <?php if ($_SESSION['role'] == 'admin') : ?>
+            <a href="<?= url_tujuan("tambah_buku"); ?>" class="btn btn-primary tambah-buku">Tambah Buku</a>
+        <?php endif; ?>
     <?php endif; ?>
     <div class="row">
 
