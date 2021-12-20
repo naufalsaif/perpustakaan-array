@@ -30,12 +30,72 @@ date_default_timezone_set('Asia/Jakarta');
             font-weight: bold;
         }
 
+        .card-book {
+            width: 100%;
+            height: 480px;
+            margin: 0 auto;
+            background: #fff;
+            transition: 0.5s;
+        }
+
+        .card-book:hover {
+            box-shadow: 0 10px 10px rgba(0, 0, 0, .3);
+        }
+
+        .card-book .face {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-book .face.face1 {
+            box-sizing: border-box;
+            padding: 20px;
+            text-align: center;
+            background: #fff;
+            color: #000;
+        }
+
+        .card-book .face.face1 h4 {
+            margin-top: 40px;
+        }
+
+        .card-book .face.face2 {
+            background: #0D6EFD;
+            transition: 0.5s;
+        }
+
+        .card-book:hover .face.face2 {
+            height: 80px;
+            width: 80px;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: transparent;
+        }
+
+        .card-book .face.face2 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .card-book:hover .face.face2 img {
+            width: 70px;
+            height: 100px;
+        }
+
         /* mobile Version */
-        @media (max-width: 576px) {
-            /* .konten-tengah {
+        @media (max-width: 540px) {
+            .konten-tengah {
                 margin: 0 auto;
             }
 
+            /*
             .tambah-buku {
                 margin-left: 9% !important;
             } */

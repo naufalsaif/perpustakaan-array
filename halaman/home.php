@@ -49,48 +49,48 @@ if (isset($_POST['search'])) {
             <?php if (isset($_POST['search'])) : ?>
                 <?php $keyword = $_POST['keyword']; ?>
                 <?php if (like_match("%$keyword%", $b['isbn']) || like_match("%$keyword%", $b['judul_buku']) || like_match("%$keyword%", $b['penulis_buku']) || like_match("%$keyword%", $b['penerbit_buku']) || like_match("%$keyword%", $b['tahun_terbit']) || like_match("%$keyword%", $b['halaman'])) : ?>
-                    <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 my-3 konten-tengah">
-                        <div class="card border-bottom-primary shadow h-100">
-                            <img src="img/buku/<?= $b['gambar']; ?>" class="card-img-top img-fluid" alt="gambar-buku">
-                            <div class="card-body">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col mr-2">
-                                        <h5 class="card-title"><?= $b['judul_buku']; ?></h5>
-                                        <p class="card-text"><?= substr_karakter($b['deskripsi']); ?></p>
 
-                                    </div>
+                    <div class="col-10 col-sm-10 col-md-6 col-lg-3 col-xl-3 my-3 konten-tengah">
+                        <!-- card untuk buku -->
+                        <div class="card card-book">
+                            <div class="face face1">
+                                <div class="content">
+                                    <h4><?= $b['judul_buku']; ?></h4>
+                                    <p><?= substr_karakter($b['deskripsi']); ?></p>
+                                    <a href="<?= url_tujuan("lihat_buku&no_index=" . $no_index); ?>" class="btn btn-primary">Lihat</a>
+                                    <?php if ($_SESSION['role'] == 'admin') : ?>
+                                        <a href="<?= url_tujuan("edit_buku&no_index=" . $no_index); ?>" class="btn btn-warning">Edit</a>
+                                    <?php endif; ?>
                                 </div>
                             </div>
-                            <div class="card-footer">
+                            <div class="face face2">
+                                <img src="img/buku/<?= $b['gambar']; ?>" alt="gambar-buku">
+                            </div>
+                        </div>
+                    </div>
+
+                <?php endif; ?>
+            <?php else : ?>
+
+                <div class="col-10 col-sm-10 col-md-6 col-lg-3 col-xl-3 my-3 konten-tengah">
+                    <!-- card untuk buku -->
+                    <div class="card card-book">
+                        <div class="face face1">
+                            <div class="content">
+                                <h4><?= $b['judul_buku']; ?></h4>
+                                <p><?= substr_karakter($b['deskripsi']); ?></p>
                                 <a href="<?= url_tujuan("lihat_buku&no_index=" . $no_index); ?>" class="btn btn-primary">Lihat</a>
                                 <?php if ($_SESSION['role'] == 'admin') : ?>
-                                    <a href="<?= url_tujuan("edit_buku&no_index=" . $no_index); ?>" class="btn btn-warning float-end">Edit</a>
+                                    <a href="<?= url_tujuan("edit_buku&no_index=" . $no_index); ?>" class="btn btn-warning">Edit</a>
                                 <?php endif; ?>
                             </div>
                         </div>
-                    </div>
-                <?php endif; ?>
-            <?php else : ?>
-                <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 my-3 konten-tengah">
-                    <div class="card border-bottom-primary shadow h-100">
-                        <img src="img/buku/<?= $b['gambar']; ?>" class="card-img-top img-fluid" alt="gambar-buku">
-                        <div class="card-body">
-                            <div class="row no-gutters align-items-center">
-                                <div class="col mr-2">
-                                    <h5 class="card-title"><?= $b['judul_buku']; ?></h5>
-                                    <p class="card-text"><?= substr_karakter($b['deskripsi']); ?></p>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <a href="<?= url_tujuan("lihat_buku&no_index=" . $no_index); ?>" class="btn btn-primary">Lihat</a>
-                            <?php if ($_SESSION['role'] == 'admin') : ?>
-                                <a href="<?= url_tujuan("edit_buku&no_index=" . $no_index); ?>" class="btn btn-warning float-end">Edit</a>
-                            <?php endif; ?>
+                        <div class="face face2">
+                            <img src="img/buku/<?= $b['gambar']; ?>" alt="gambar-buku">
                         </div>
                     </div>
                 </div>
+
             <?php endif; ?>
             <?php $no_index--; ?>
         <?php endforeach; ?>

@@ -71,3 +71,19 @@ $pinjam[] = [
 "tanggal_kembali" => "1639711473",
 "id_buku" => "1639666966540",
 ];
+$pinjam[] = [
+"id" => "163979257922",
+"email" => "noval@gmail.com",
+"judul_buku" => "Laskar Pelangi",
+"tanggal_pinjam" => "1639792579",
+"tanggal_kembali" => "1639792795",
+"id_buku" => "1639706771336",
+];
+$pinjam[] = [
+"id" => "16397927864",
+"email" => "noval@gmail.com",
+"judul_buku" => "Negeri 5 Menara",
+"tanggal_pinjam" => "1639792786",
+"tanggal_kembali" => "",
+"id_buku" => "1639666987156",
+];
