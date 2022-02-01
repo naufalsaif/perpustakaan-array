@@ -70,10 +70,9 @@ $pinjam = [];
                             $jumlah_array = count($pinjam) - 1;
                             $no_index = $jumlah_array;
                             $pinjam_reverse = array_reverse($pinjam);
-
                             include('database/akun.php');
-                            $no_index = $_SESSION['id_akun'];
-                            $data_akun = $akun[$no_index];
+                            $no_index2 = $_SESSION['id_akun'];
+                            $data_akun = $akun[$no_index2];
                             ?>
                             <?php foreach ($pinjam_reverse as $p) : ?>
                                 <tr>

@@ -18,11 +18,14 @@
 //     }
 // }
 
+// function pindah halaman
 function redirect_page($data)
 {
     echo "<script>document.location.href = 'index.php?page=" . $data . "';</script>";
 }
 
+
+// fungsi logout atau keluar 
 function logout()
 {
     session_unset();
@@ -30,16 +33,19 @@ function logout()
     redirect_page("login");
 }
 
+// fungsi pindah halaman
 function url_tujuan($data)
 {
     return "index.php?page=$data";
 }
 
+// fungsi pesan alert
 function message_alert($message)
 {
     echo "<script>alert('" . $message . "');</script>";
 }
 
+// fungsi membatasi karakter
 function substr_karakter($input)
 {
     $kata = substr($input, 0, 100);
@@ -48,6 +54,16 @@ function substr_karakter($input)
     return $kalimat;
 }
 
+// fungsi membatasi judul
+function substr_judul($input)
+{
+    $kata = substr($input, 0, 50);
+    $jumlah = strlen($input);
+    $kalimat = $kata . ($jumlah > 50 ? '...' : '');
+    return $kalimat;
+}
+
+// fungsi upload gambar
 function upload()
 {
     $namaFile = $_FILES['gambar']['name'];
@@ -86,6 +102,7 @@ function upload()
     return $namaFileBaru;
 }
 
+// fungsi ubah upload gambar 
 function upload_edit($gambarlama)
 {
 
@@ -129,6 +146,7 @@ function upload_edit($gambarlama)
     return $namaFileBaru;
 }
 
+// fungsi mencari
 function like_match($pattern, $subject)
 {
     $pattern = str_replace('%', '.*', preg_quote($pattern, '/'));

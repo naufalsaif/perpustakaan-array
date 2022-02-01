@@ -8,7 +8,7 @@ $buku[] = [
 "tahun_terbit" => "2015",
 "halaman" => "344",
 "deskripsi" => "Jika aku berkata bahwa aku mencintainya, maka itu adalah sebuah pernyataan yang sudah cukup lengkap(milea). Senakal-nakalnya anak geng motor, Lia, mereka shalat pada waktu ujian praktek Agama(dilan).",
-"stok_buku" => "12",
+"stok_buku" => "15",
 "gambar" => "163966707036401.jpg",
 ];
 $buku[] = [
@@ -74,7 +74,7 @@ Dia terheran-heran mendengar komentator sepakbola berbahasa Arab, anak menggigau
 Dipersatukan oleh hukuman jewer berantai, Alif berteman dekat dengan Raja dari Medan, Said dari Surabaya, Dulmajid dari Sumenep, Atang dari Bandung dan Baso dari Gowa. Di bawah menara masjid yang menjulang, mereka berenam kerap menunggu maghrib sambil menatap awan lembayung yang berarak pulang ke ufuk. Di mata belia mereka, awan-awan itu menjelma menjadi negara dan benua impian masing-masing. Kemana impian jiwa muda ini membawa mereka? Mereka tidak tahu. Yang mereka tahu adalah: Jangan pernah remehkan impian, walau setinggi apa pun. Tuhan sungguh Maha Mendengar.
 
 Bagaimana perjalanan mereka ke ujung dunia ini dimulai? Siapa horor nomor satu mereka? Apa pengalaman mendebarkan di tengah malam buta di sebelah sungai tempat jin buang anak? Bagaimana sampai ada yang kasak-kusuk menjadi mata-mata misterius? Siapa Princess of Madani yang mereka kejar-kejar? Kenapa mereka harus botak berkilat-kilat? Bagaimana sampai Icuk Sugiarto, Arnold Schwarzenegger, Ibnu Rusyd, bahkan Maradona sampai akhirnya ikut campur? Ikuti perjalanan hidup yang inspiratif ini langsung dari mata para pelakunya. Negeri Lima Menara adalah buku pertama dari sebuah trilogi.",
-"stok_buku" => "9",
+"stok_buku" => "10",
 "gambar" => "163966705080262.jpg",
 ];
 $buku[] = [

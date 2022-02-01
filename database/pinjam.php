@@ -12,7 +12,7 @@ $pinjam[] = [
 "email" => "noval@gmail.com",
 "judul_buku" => "Dillan 1991",
 "tanggal_pinjam" => "1639661025",
-"tanggal_kembali" => "1639662345",
+"tanggal_kembali" => "1642925810",
 "id_buku" => "1639659723638",
 ];
 $pinjam[] = [
@@ -84,6 +84,38 @@ $pinjam[] = [
 "email" => "noval@gmail.com",
 "judul_buku" => "Negeri 5 Menara",
 "tanggal_pinjam" => "1639792786",
-"tanggal_kembali" => "",
+"tanggal_kembali" => "1640747713",
 "id_buku" => "1639666987156",
+];
+$pinjam[] = [
+"id" => "164074773316",
+"email" => "noval@gmail.com",
+"judul_buku" => "Laskar Pelangi",
+"tanggal_pinjam" => "1640747733",
+"tanggal_kembali" => "1640747750",
+"id_buku" => "1639706771336",
+];
+$pinjam[] = [
+"id" => "164292400966",
+"email" => "tegar@gmail.com",
+"judul_buku" => "Laskar Pelangi",
+"tanggal_pinjam" => "1642924009",
+"tanggal_kembali" => "1642924041",
+"id_buku" => "1639706771336",
+];
+$pinjam[] = [
+"id" => "164292575936",
+"email" => "tegar@gmail.com",
+"judul_buku" => "Laskar Pelangi",
+"tanggal_pinjam" => "1642925759",
+"tanggal_kembali" => "1642926456",
+"id_buku" => "1639706771336",
+];
+$pinjam[] = [
+"id" => "164292651055",
+"email" => "tegar@gmail.com",
+"judul_buku" => "Dilan Bagian Kedua Dia Adalah Dilanku Tahun 1991",
+"tanggal_pinjam" => "1642926510",
+"tanggal_kembali" => "1642926515",
+"id_buku" => "1639659723638",
 ];

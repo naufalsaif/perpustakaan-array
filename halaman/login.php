@@ -70,7 +70,7 @@ if (isset($_POST['submit'])) {
             </div>
         </div>
         <div class="footer-login text-center rounded">
-            &copy;<?= date('Y'); ?> Created By Kelompokx
+            &copy;<?= date('Y'); ?> Created By Kelompok 5
         </div>
     </div>
 </div>

@@ -118,12 +118,15 @@ function delete_temp()
     }
 }
 
+// pindah halaman
 function redirect_home()
 {
     message_alert("Buku berhasil dihapus!");
     redirect_page("home");
 }
 
+
+// menjalankan program
 hapus_gambar();
 hapus_data();
 newfile_temp();

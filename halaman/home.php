@@ -55,7 +55,7 @@ if (isset($_POST['search'])) {
                         <div class="card card-book">
                             <div class="face face1">
                                 <div class="content">
-                                    <h4><?= $b['judul_buku']; ?></h4>
+                                    <h4><?= substr_judul($b['judul_buku']); ?></h4>
                                     <p><?= substr_karakter($b['deskripsi']); ?></p>
                                     <a href="<?= url_tujuan("lihat_buku&no_index=" . $no_index); ?>" class="btn btn-primary">Lihat</a>
                                     <?php if ($_SESSION['role'] == 'admin') : ?>
@@ -77,7 +77,7 @@ if (isset($_POST['search'])) {
                     <div class="card card-book">
                         <div class="face face1">
                             <div class="content">
-                                <h4><?= $b['judul_buku']; ?></h4>
+                                <h4><?= substr_judul($b['judul_buku']); ?></h4>
                                 <p><?= substr_karakter($b['deskripsi']); ?></p>
                                 <a href="<?= url_tujuan("lihat_buku&no_index=" . $no_index); ?>" class="btn btn-primary">Lihat</a>
                                 <?php if ($_SESSION['role'] == 'admin') : ?>
